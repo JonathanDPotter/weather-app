@@ -1,3 +1,5 @@
+$background: rgb(160, 172, 182);
+
 * {
   margin: 0;
   top: 0;
@@ -8,5 +10,35 @@ body {
   width: 100vw;
   height: 100vh;
   color: white;
-  background-color: black;
+  background-color: $background;
+}
+
+#form {
+  margin: 1rem;
+    input {
+      background-color: inherit;
+      color: inherit;
+      border-radius: 5px;
+      padding: 2px;
+    }
+}
+
+#zip-input {
+  width: 5rem;
+  color: inherit;
+  background-color: inherit;
+  &.invalid {
+    background-color: rgba($color: red, $alpha: 0.3);
+  }
+}
+
+#display {
+  margin-top: 4rem;
+  text-align: center;
+  h1, h2 {
+    margin: .5rem;
+  }
+  img {
+    height: 8rem;
+  }
 }
