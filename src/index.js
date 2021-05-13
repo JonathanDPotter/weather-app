@@ -17,7 +17,6 @@ const fetchWeather = async function (location) {
     );
     if (response.ok) {
       const data = await response.json();
-      console.log(data);
       city.textContent = data.name;
       temp.textContent = `${Math.round(data.main.temp)}\xB0`;
       lowHigh.textContent = `Low: ${Math.round(
